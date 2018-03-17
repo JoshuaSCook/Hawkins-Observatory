@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hawkins Observatory</title>
+
+        <!-- style sheets -->
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        
+        <!-- jQuery.js link -->
+        <script type="text/javascript" src="javascript/jquery.js"></script>
+        
+        <!-- datepicker source -->
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        
+        <!-- Javascript -->
+        <script type="text/javascript">
+            // dropdown function
+            $(function(){
+                var $select = $(".0-25");
+                for (i=0;i<=25;i++){
+                    $select.append($('<option></option>').val(i).html(i))
+                }
+            });
+            
+            // datepicker function
+            $(document).ready(function() {
+                $("#datepicker").datepicker();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="canvas">
+            <p>Please fill out this form to ensure a spot for our nightly telescope viewing tours.</p>
+            <h2>Ticket Prices</h2>
+            ADULTS: $25.00<br>
+            YOUTH: $15.00
+            
+            <h2>Booking Form</h2>
+            
+            
+            <form>
+                First<br>
+                <input type="text" name="first"><br><br>
+                
+                Last<br>
+                <input type="text" name="last"><br><br>
+                
+                Phone<br>
+                <input type="text" name="phone"><br><br>
+                
+                Email<br>
+                <input type="text" name="email"><br><br><br>
+                
+                Attendance Date (see table for showtimes)<br>
+                <input id="datepicker" /><br><br>
+                
+                TICKETS<br>
+                Adults:
+                <select class="0-25"></select><br>
+                
+                Youth: (under 18):
+                <select class="0-25"></select><br><br>
+                
+                <input type="checkbox" name="photo">
+                1hr Astrophotography Session<br><br>
+                
+                PAYMENT<br>
+                <input type="radio" name="payment" value="cash"> Cash<br>
+                <input type="radio" name="payment" value="credit"> Credit Card<br>
+                <input type="radio" name="payment" value="paypal"> Paypal<br><br>
+                
+                <input type="submit" value="Next">
+            
+            </form>
+        </div> <!-- end canvas -->
+    </body>
+</html>
