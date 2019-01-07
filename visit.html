@@ -2,63 +2,123 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>Hawkins Observatory</title>
+        <title>Hawkins Naitonal Observatory | Visit</title>
 
         <!-- style sheets -->
-        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link type="text/css" rel="stylesheet" href="css/style_pages.css" />
     </head>
     <body>
+        <div id="top-section">
+            <h1><a href="index.html">Hawkins<br>National<br>Observatory</a></h1>
+            <ul>
+                <li class="menu_link"><a href="visit.html">VISIT</a></li>
+                <li class="menu_link"><a href="events.html">EVENTS</a></li>
+                <li class="menu_link"><a href="astrophotography.html">ASTROPHOTOGRAPHY</a></li>
+                <li class="menu_link"><a href="resources.html">RESOURCES</a></li>
+                <li class="menu_link"><a href="contact.html">CONTACT</a></li>
+                <li class="menu_link" id="book_now"><a href="book.html">BOOK NOW</a></li>
+            </ul>           
+        </div> <!-- end top-section -->
+            
         <div id="canvas">
-            <div class="section" id="header">
-                <h1 id="observatory_name"><a href="index.html">Hawkins Observatory</a></h1>
-            </div> <!-- end header -->
-            
-            <div class="section" id="menu">
-                <div id="links">
+            <div class="section" id="content">
+                <div id="overview">
+                    <h2>Night Sky & Telescope Viewing Show</h2>
+
+                    <p>Welcome to the Hawkins Observatory where you'll be taken on a guided tour of the heavens. We offer a unique presentation to introduce you to the wonders of the cosmos and get you framiliar with the night sky before you'll have the opportunity to view many wonderful celestial objects though our variety of telescopes. Our guides have many years worth of knowledge and experience and can answer any of your questions about the universe and our place in it.
+                    </p><br>
+
+                    <h3>What to Expect</h3>
+                    <p>Shows last for 1.5 hours. We begin with a 20 min presentation to introduce you to the variety of wonders in the night sky and to impart a sense of scale of our surrounding universe and the structures within it. The remaining time is spent viewing celestial objects directly though a variety of telescopes. You'll be astonished to see with your won eyes, light eminating from the planets, distant stars, nebulas and even other galaxies millions of lightyears away! You'll come away with a deeper understanding of how the cosmos is layed out as well as a gained appreciation for the universal processes that make our existance here on Earth possible.</p><br>
+                </div> <!-- end overview -->
+                
+                <div id="telescopes">
+                    <h3>Our Telescopes</h3>
                     <ul>
-                        <li class="menu_link"><a href="visit.html">Visit</a></li>
-                        <li class="menu_link"><a href="events.html">Events</a></li>
-                        <li class="menu_link"><a href="astrophotography.html">Astrophotography</a></li>
-                        <li class="menu_link"><a href="resources.html">Resources</a></li>
-                        <li class="menu_link"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div> <!-- end links -->
-            </div> <!-- end menu -->
-            
-            <div class="section" id="main_content">
-                <h2>Night Sky & Telescope Viewing Show</h2>
+                        <li>20" Planewave Reflector</li>
+                        <li>11" Celestron Shmidt-Cassegrain</li>
+                        <li>8" Meade Shmidt-Cassegrain</li>
+                        <li>4" Orion Refractor</li>
+                    </ul><br>
+                </div> <!-- end telescopes -->
                 
-                <p>Welcome to the Hawkins Observatory where you'll be taken on a guided tour of the heavens. We offer a unique presentation to introduce you to the wonders of the cosmos and get you framiliar with the night sky before you'll have the opportunity to view many wonderful celestial objects though our variety of telescopes. Our guides have many years worth of knowledge and experience and can answer any of your questions about the universe and our place in it.
-                </p>
+                <div id="showtimes">
+                    <h3>Showtimes</h3>
+                    <ul>
+                        <li>September - March<span class="time">7:00 PM</span></li>
+                        <li>April - August<span class="time">8:00 PM</span></li>     
+                    </ul><br>
+                </div> <!-- end showtimes -->
                 
-                <h3>What to Expect</h3>
-                <p>Shows last for 1.5 hours. We begin with a 20 min presentation to introduce you to the variety of wonders in the night sky and to impart a sense of scale of our surrounding universe and the structures within it. The remaining time is spent viewing celestial objects directly though a variety of telescopes. You'll be astonished to see with your won eyes, light eminating from the planets, distant stars, nebulas and even other galaxies millions of lightyears away! You'll come away with a deeper understanding of how the cosmos is layed out as well as a gained appreciation for the universal processes that make our existance here on Earth possible.</p>
+                <div id="prices">
+                    <h3>Ticket Prices</h3>
+                    <ul>
+                        <li>Adult<span class="price">$20.00</span></li>
+                        <li>Child (16 & under)<span class="price">$10.00</span></li>
+                        <li>Seniors (65+)<span class="price">$15.00</span></li><br>
+                        <li>Astrophotography Session (1 hr)<span class="price">$60.00</span></li>
+                        <li>2018 Astronomy Guide Book<span class="price">$24.95</span></li>
+                    </ul><br>
+                </div> <!-- end prices -->
                 
-                <h3>Our Telescopes</h3>
-                <ul id="telescopes">
-                    <li>20" Planewave Reflector</li>
-                    <li>11" Celestron Shmidt-Cassegrain</li>
-                    <li>8" Meade Shmidt-Cassegrain</li>
-                    <li>4" Orion Refractor</li>
-                </ul>
-                
-                <h3>Showtimes</h3>
-                <ul id="showtimes">
-                    <li>September - March<span class="time">7:00 PM</span></li>
-                    <li>April - August<span class="time">8:00 PM</span></li>     
-                </ul>
-                
-                <h3>Ticket Prices</h3>
-                <ul id="prices">
-                    <li>Adult<span class="price">$20.00</span></li>
-                    <li>Child (16 & under)<span class="price">$10.00</span></li>
-                    <li>Seniors (65+)<span class="price">$15.00</span></li><br>
-                    <li>Astrophotography Session (1 hr)<span class="price">$60.00</span></li>
-                    <li>2018 Astronomy Guide Book<span class="price">$24.95</span></li>
-                </ul>
+                <div id="objects">
+                    <h3>Objects Visible for the Month of April 2018</h3>
+                    <ul>
+                        <li>MOON:
+                            1st-2nd,
+                            21st-20th</li>
+                        <li>PLANETS:
+                            Jupiter</li>
+                        <li>MINOR PLANETS:
+                            none</li>
+                        <li>COMETS:
+                            none</li>
+                        <li>STARS:
+                            Sirius,
+                            Betelguese</li>
+                        <li>MULTIPLE STARS:
+                            Acrux,
+                            Alpha Centauri,
+                            Rigel,
+                            HD 56578</li>
+                        <li>PLANETARY NEBULAE:
+                            <a href="https://en.wikipedia.org/wiki/NGC_3242
+">Ghost of Jupiter</a></li>
+                        <li>OPEN CLUSTERS:
+                            Jewel Box,
+                            Southern Pleiades,
+                            NGC 3532,
+                            NGC 3293,
+                            NGC 2516</li>
+                        <li>GLOBULAR CLUSTERS:
+                            47 Tucanae,
+                            Omega Centauri</li>
+                        <li>NEBULAE:
+                            Orion Nebula,
+                            Tarantula Nebula,
+                            Eta Carina Nebula</li>
+                        <li>GALAXIES:
+                            Centaurus A,
+                            Sombrero Galaxy,
+                            Lg. & Sm. Magellanic Clouds</li>
+                        <li>CONSTELLATIONS:
+                            Gemini,
+                            Cancer,
+                            Leo,
+                            Virgo,
+                            Canis Major,
+                            Canis Minor,
+                            Eridanus</li>
+                        <li>ASTERISMS:
+                            Saucepan,
+                            False Cross,
+                            Diamond Cross,
+                            Sickle</li>
+                    </ul><br>
+                </div>
                 
                 <button type="button" onclick="window.location.href='book.html'">BOOK NOW!</button>
-            </div>
+            </div> <!-- end content -->
         </div> <!-- end canvas -->
     </body>
 </html>

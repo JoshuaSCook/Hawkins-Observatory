@@ -2,36 +2,79 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>Hawkins Observatory</title>
+        <title>Hawkins National Observatory</title>
 
         <!-- style sheets -->
         <link type="text/css" rel="stylesheet" href="css/style.css" />
+        
+        <!-- jQuery.js link -->
+        <script type="text/javascript" src="javascript/jquery.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <!-- smooth scrolling -->
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+
+              // Store hash
+              var hash = this.hash;
+
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
     </head>
     <body>
-        <div id="canvas">
-            <div class="section" id="header">
-                <h1 id="observatory_name"><a href="index.html">Hawkins Observatory</a></h1>
-            </div> <!-- end header -->
+        <div id="top-section">
+            <h1><a href="index.html">Hawkins<br>National<br>Observatory</a></h1>
+            <ul>
+                <li class="menu_link"><a href="visit.html">VISIT</a></li>
+                <li class="menu_link"><a href="events.html">EVENTS</a></li>
+                <li class="menu_link"><a href="astrophotography.html">ASTROPHOTOGRAPHY</a></li>
+                <li class="menu_link"><a href="resources.html">RESOURCES</a></li>
+                <li class="menu_link"><a href="contact.html">CONTACT</a></li>
+                <li class="menu_link" id="book_now"><a href="book.html">BOOK NOW</a></li>
+            </ul>
             
-            <div class="section" id="menu">
-                <div id="links">
-                    <ul>
-                        <li class="menu_link"><a href="visit.html">Visit</a></li>
-                        <li class="menu_link"><a href="events.html">Events</a></li>
-                        <li class="menu_link"><a href="astrophotography.html">Astrophotography</a></li>
-                        <li class="menu_link"><a href="resources.html">Resources</a></li>
-                        <li class="menu_link"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div> <!-- end links -->
-            </div> <!-- end menu -->
+            <h2>Your Gate to the Universe<br><br><a id="learn_more" href="#sub-visit">LEARN MORE</a></h2>
             
-            <div class="section" id="main_content">
-                <h2>Night Sky & Telescope Viewing Show</h2>
-                
-                <p>Welcome to the Hawkins Observatory where you'll be taken on a guided tour of the heavens. We offer a unique presentation to introduce you to the wonders of the cosmos and get you framiliar with the night sky before you'll have the opportunity to view many wonderful celestial objects though our variety of telescopes. Our guides have many years worth of knowledge and experience and can answer any of your questions about the universe and our place in it.
-                </p>
-                
-                <button type="button" onclick="window.location.href='book.html'">BOOK NOW!</button>
+        </div> <!-- end top-section -->
+        
+        <div id="content">
+            <div class="section" id="sub-visit">
+                <p>Find out everything you need to know to plan your next visit to the Hawkins National Observatory! All information such as ticket prices, location and showtimes, visible objects this time of year and what you can expect from the exprience can all be found here.</p><br>
+                <a href="visit.html">PLAN YOUR VISIT</a><br><br>
+                <p>or simply,</p><br>
+                <a href="book.html">BOOK NOW</a>
+            </div>
+
+            <div class="section" id="sub-events">
+                <p>Here you'll find out all about our upcoming events. We offer a variety of monthly activities including full moon party, kids night and educational lecture series.<br><br>You can also find out about upcoming celestial events such as planetary alignments, eclipses and meteor showers.</p><br>
+                <a href="events.html">UPCOMING EVENTS</a>
+            </div>
+
+            <div class="section" id="sub-astrophotography">
+                <a href="astrophotography.html">EXPLORE ASTROPHOTOGRAPHY</a>
+            </div>
+
+            <div class="section" id="sub-resources">
+                <a href="resources.html">ASTRONOMY RESOURCES</a>
             </div>
         </div> <!-- end canvas -->
     </body>

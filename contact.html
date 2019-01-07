@@ -2,10 +2,10 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>Contact</title>
+        <title>Hawkins National Observatory | Contact</title>
 
         <!-- style sheets -->
-        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link type="text/css" rel="stylesheet" href="css/style_pages.css" />
         <!-- jQuery.js link -->
         <script type="text/javascript" src="javascript/jquery.js"></script>
         
@@ -15,37 +15,48 @@
         </script>
     </head>
     <body>
+        <div id="top-section">
+            <h1><a href="index.html">Hawkins<br>National<br>Observatory</a></h1>
+            <ul>
+                <li class="menu_link"><a href="visit.html">VISIT</a></li>
+                <li class="menu_link"><a href="events.html">EVENTS</a></li>
+                <li class="menu_link"><a href="astrophotography.html">ASTROPHOTOGRAPHY</a></li>
+                <li class="menu_link"><a href="resources.html">RESOURCES</a></li>
+                <li class="menu_link"><a href="contact.html">CONTACT</a></li>
+                <li class="menu_link" id="book_now"><a href="book.html">BOOK NOW</a></li>
+            </ul>           
+        </div> <!-- end top-section -->
+        
         <div id="canvas">
-            <h2>Contact Us</h2>
-            <p>Feel free to send us a message or give us a ring at any time with questions, comments or concerns. Please allow 24 hours for a reply, but we'll get back to you as soon as possible!</p>
-            
-            <h3>Hawkins Observatory</h3>
-            11 Gateway Rd<br>
-            Hawkins, Indiana 46151<br><br>
-            
-            (765) 342-4026<br>
-            
-            <a href="contact@hawkinsobservatory.com">contact@hawkinsobservatory.com</a><br><br><br>
-            
-            <form>
-                First<br>
-                <input type="text" name="first"><br>
-                
-                Last<br>
-                <input type="text" name="last"><br>
-                
-                Phone<br>
-                <input type="text" name="phone"><br>
-                
-                Email<br>
-                <input type="text" name="email"><br><br>
-                
-                <textarea name="comment">Enter message here...</textarea><br><br>
-               
-                <input type="submit" value="Submit">
-            </form>
-            
-            
+            <div id="content">
+                <h2>Contact Us</h2>
+                <p>Feel free to send us a message or give us a ring at any time with questions, comments or concerns. Please allow 24 hours for a reply, but we'll get back to you as soon as possible!</p><br>
+
+                <h3>Hawkins Observatory</h3>
+                11 Gateway Rd<br>
+                Hawkins, Indiana 46151<br>
+                (765) 342-4026<br>
+                <a href="contact@hawkinsobservatory.com">contact@hawkinsobservatory.com</a><br><br><br>
+
+                <form method="post" action="mailto:josh-cook@sbcglobal.net">
+                    First<br>
+                    <input type="text" name="first"><br>
+
+                    Last<br>
+                    <input type="text" name="last"><br>
+
+                    Phone<br>
+                    <input type="text" name="phone"><br>
+
+                    Email<br>
+                    <input type="text" name="email"><br><br>
+
+                    Message<br>
+                    <textarea name="comment"></textarea><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div> <!-- end content -->
         </div> <!-- end canvas -->
     </body>
 </html>

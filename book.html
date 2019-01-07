@@ -2,10 +2,10 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>Hawkins Observatory</title>
+        <title>Hawkins National Observatory | Booking</title>
 
         <!-- style sheets -->
-        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <link type="text/css" rel="stylesheet" href="css/style_pages.css" />
         
         <!-- jQuery.js link -->
         <script type="text/javascript" src="javascript/jquery.js"></script>
@@ -32,49 +32,58 @@
         </script>
     </head>
     <body>
+        <div id="top-section">
+            <h1><a href="index.html">Hawkins<br>National<br>Observatory</a></h1>
+            <ul>
+                <li class="menu_link"><a href="visit.html">VISIT</a></li>
+                <li class="menu_link"><a href="events.html">EVENTS</a></li>
+                <li class="menu_link"><a href="astrophotography.html">ASTROPHOTOGRAPHY</a></li>
+                <li class="menu_link"><a href="resources.html">RESOURCES</a></li>
+                <li class="menu_link"><a href="contact.html">CONTACT</a></li>
+                <li class="menu_link" id="book_now"><a href="book.html">BOOK NOW</a></li>
+            </ul>           
+        </div> <!-- end top-section -->
+        
         <div id="canvas">
-            <p>Please fill out this form to ensure a spot for our nightly telescope viewing tours.</p>
-            <h2>Ticket Prices</h2>
-            ADULTS: $25.00<br>
-            YOUTH: $15.00
-            
-            <h2>Booking Form</h2>
-            
-            
-            <form>
-                First<br>
-                <input type="text" name="first"><br><br>
-                
-                Last<br>
-                <input type="text" name="last"><br><br>
-                
-                Phone<br>
-                <input type="text" name="phone"><br><br>
-                
-                Email<br>
-                <input type="text" name="email"><br><br><br>
-                
-                Attendance Date (see table for showtimes)<br>
-                <input id="datepicker" /><br><br>
-                
-                TICKETS<br>
-                Adults:
-                <select class="0-25"></select><br>
-                
-                Youth: (under 18):
-                <select class="0-25"></select><br><br>
-                
-                <input type="checkbox" name="photo">
-                1hr Astrophotography Session<br><br>
-                
-                PAYMENT<br>
-                <input type="radio" name="payment" value="cash"> Cash<br>
-                <input type="radio" name="payment" value="credit"> Credit Card<br>
-                <input type="radio" name="payment" value="paypal"> Paypal<br><br>
-                
-                <input type="submit" value="Next">
-            
-            </form>
+            <div id="content">
+                <p>Please fill out this form to ensure a spot for our nightly telescope viewing tours.</p><br>
+                <h2>Ticket Prices</h2>
+                ADULTS: $25.00<br>
+                YOUTH: $15.00<br><br>
+
+                <h2>Booking Form</h2>
+                <form>
+                    First<br>
+                    <input type="text" name="first"><br><br>
+                    Last<br>
+                    <input type="text" name="last"><br><br>
+                    Phone<br>
+                    <input type="text" name="phone"><br><br>
+                    Email<br>
+                    <input type="text" name="email"><br><br><br>
+
+                    Attendance Date (see table for showtimes)<br>
+                    <input id="datepicker" /><br><br>
+
+                    TICKETS<br>
+                    Adults:
+                    <select class="0-25"></select><br>
+
+                    Youth: (under 18):
+                    <select class="0-25"></select><br><br>
+
+                    <input type="checkbox" name="photo">
+                    1hr Astrophotography Session<br><br>
+
+                    PAYMENT<br>
+                    <input type="radio" name="payment" value="cash"> Cash<br>
+                    <input type="radio" name="payment" value="credit"> Credit Card<br>
+                    <input type="radio" name="payment" value="paypal"> Paypal<br><br>
+
+                    <input type="submit" value="Next">
+
+                </form>
+            </div> <!-- end content -->
         </div> <!-- end canvas -->
     </body>
 </html>

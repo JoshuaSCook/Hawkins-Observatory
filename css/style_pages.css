@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'arcon';
+    src: url('../fonts/Arcon-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+* {
+    font-family: 'arcon';
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+    background-image: url("../images/m83.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: #464646;
+    }
+
+html,body {
+    height:100%;
+    }
+
+#top-section{
+    width: 80%;
+    height: 160px;
+    margin: auto;
+    }
+
+#top-section h1 {
+    display: inline;
+    color: white;
+    line-height: 30px;
+    position: relative;
+    top: 40px;
+    }
+
+#top-section ul {
+    float: right;
+    position: relative;
+    top: 48px;
+    }
+
+#top-section ul li {
+    float: left;
+    font-size: 14px;
+	list-style-type: none;
+    margin-left: 20px;
+    padding: 6px;
+    border-bottom: 3px solid rgba(0,0,0,0.0);
+    }
+
+#top-section a {
+	text-decoration: none;
+    color: white;
+    }
+
+#top-section ul li:Hover {
+    border-bottom: 3px solid white;
+    }
+
+#top-section ul #book_now {
+    border: 1px solid white;
+    border-radius: 3px;
+    }
+
+#top-section ul #book_now:Hover {
+    background-color: rgba(0,0,0,0.2); 
+    }
+
+#canvas {
+    background-color: white;
+    }
+
+#content {
+    width: 80%;
+    margin: auto;
+    padding-top: 40px;
+    }
+
+#telescopes ul {
+    list-style-type: none;
+    }
+
+#showtimes ul {
+    width: 300px;
+    list-style-type: none;
+    }
+
+.time {
+    float: right;
+    }
+
+#prices ul {
+    width: 300px;
+    list-style-type: none;
+    }
+
+.price {
+    float: right;    
+    }
+
+#objects ul {
+    width: 600px;
+    list-style-type: none;
+    }
+
+textarea {
+    width: 400px;
+    height: 160px;
+    font-size: 14px;
+    }
+    

@@ -1,60 +1,132 @@
-#canvas {
-	margin: auto;
-	width: 1000px;}
+@font-face {
+    font-family: 'arcon';
+    src: url('../fonts/Arcon-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+    }
 
-#observatory_name {
+* {
+    font-family: 'arcon';
     margin: 0;
-    padding: 10px;
-    height: 60px;
-    background-color: #000066;}
+    padding: 0;
+    }
 
-#observatory_name a {
-    font-family: helvetica, sans-serif;
-	font-weight: bold;
-	font-size: 28px;
-    line-height: 100px;
-	text-decoration: none;
-    color: white;}
+body {
+    background-image: url("../images/m83.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: #464646;
+    }
 
-#links ul {
-	margin: 0;
-	padding: 0;
-	height: 35px;}
+html,body {
+    height:100%;
+    }
 
-#links ul li {
-	float: left;
-	width: 20%;
-	font-family: helvetica, sans-serif;
-	font-weight: bold;
-	font-size: 18px;
-	line-height: 35px;
-	text-align: center;
+#top-section{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    }
+
+#top-section h1 {
+    display: inline;
+    color: white;
+    line-height: 30px;
+    position: relative;
+    top: 40px;
+    }
+
+#top-section ul {
+    float: right;
+    position: relative;
+    top: 48px;
+    }
+
+#top-section ul li {
+    float: left;
+    font-size: 14px;
 	list-style-type: none;
-    background-color: #000066;}
+    margin-left: 20px;
+    padding: 6px;
+    border-bottom: 3px solid rgba(0,0,0,0.0);
+    }
 
-#links ul li:Hover {
-	background-color: #CC0000;}
-
-#links ul li a {
+#top-section a {
 	text-decoration: none;
-    color: white;}
+    color: white;
+    }
 
-li {
-    list-style-type: none;}
+#top-section ul li:Hover {
+    border-bottom: 3px solid white;
+    }
 
-#telescopes li {
-    width: 300px;
-    text-align: center;}
+#top-section ul #book_now {
+    border: 1px solid white;
+    border-radius: 3px;
+    }
 
-#showtimes {
-    width: 300px;}
+#top-section ul #book_now:Hover {
+    background-color: rgba(0,0,0,0.2); 
+    }
 
-.time {
-    float: right;}
+h2 {
+    font-size: 48px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    position: relative;
+    float: left;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
 
-#prices {
-    width: 300px;}
+#learn_more {
+    font-size: 18px;
+    padding: 8px;
+    border: 3px solid white;
+    border-radius: 6px;
+    text-shadow: none;
+    }
 
-.price {
-    float: right;}
-    
+#content {
+    background-color: white;
+    }
+
+.section {
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+
+.section a {
+    font-size: 18px;
+    padding: 8px;
+    border: 3px solid #666666;
+    background-color: white;
+    border-radius: 6px;
+    text-shadow: none;
+    text-decoration: none;
+    color: #CC0000;
+    }
+
+#sub-visit {
+    background-color: #FFFFFF;
+    }
+
+#sub-events {
+    background-color: #000033;
+    color: white;
+    }
+
+#sub-astrophotography {
+    background-color: #CCCCCC;
+    }
+
+#sub-resources {
+    background-color: #330000;
+    }
